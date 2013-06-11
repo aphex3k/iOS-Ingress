@@ -28,9 +28,9 @@
 	[[UITabBarItem appearance] setTitleTextAttributes:@{UITextAttributeFont: [UIFont fontWithName:@"Coda-Regular" size:10]} forState:UIControlStateNormal];
 	[[UISegmentedControl appearance] setTitleTextAttributes:@{UITextAttributeFont: [UIFont fontWithName:@"Coda-Regular" size:10]} forState:UIControlStateNormal];
 	[[UILabel appearance] setFont:[UIFont fontWithName:@"Coda-Regular" size:16]];
-	[[UIButton appearance] setFont:[UIFont fontWithName:@"Coda-Regular" size:16]];
-	[[UIButton appearanceWhenContainedIn:[UIActionSheet class], nil] setFont:[UIFont fontWithName:@"Coda-Regular" size:18]];
-	[[UIButton appearanceWhenContainedIn:[UINavigationBar class], nil] setFont:[UIFont fontWithName:@"Coda-Regular" size:12]];
+	[[[UIButton appearance] titleLabel] setFont:[UIFont fontWithName:@"Coda-Regular" size:16]];
+	[[[UIButton appearanceWhenContainedIn:[UIActionSheet class], nil]  titleLabel] setFont:[UIFont fontWithName:@"Coda-Regular" size:18]];
+	[[[UIButton appearanceWhenContainedIn:[UINavigationBar class], nil] titleLabel] setFont:[UIFont fontWithName:@"Coda-Regular" size:12]];
 	[[UITextField appearance] setFont:[UIFont fontWithName:@"Coda-Regular" size:16]];
 
 	[GAI sharedInstance].trackUncaughtExceptions = YES;
